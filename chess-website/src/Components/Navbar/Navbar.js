@@ -1,8 +1,9 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
 import Logo from '../../Images/logo.png'
 import './Navbar.css'
 import {Button} from '../Button/Button'
+
 function Navbar() {
     const [click, setClick] = useState(false);
 
@@ -13,25 +14,37 @@ function Navbar() {
     const closeMobileMenu = () => setClick(false);
 
     const showButton = () => {
-      if(window.innerWidth <= 960) {
+      if(window.innerWidth <= 1006) {
         setButton(false)
       } else {
         setButton(true);
       }
     }
+
     
-    window.addEventListener('resize', showButton)
+    
+    useEffect(() => {
+      showButton()
+    }, [])
+
+    window.addEventListener('resize', showButton) // Window is a known JS object
 
     return (
     <>
       <nav className="navbar">
           <div className="navbar-container">
-            <Link to="/" className="navbar-logo">
+            {/* <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img src={Logo} alt="Logo" className="navbar-image"></img>
-                Waterloo C.I Chess Club
+                <div className="navbar-title">Waterloo C.I Chess Club</div>
+            </Link> */}
+
+            <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+              <img src={Logo} alt="Logo" className="navbar-image"/>
+                <div className='navbar-title'>Vikings Chess</div>
             </Link>
+
             <div className='menu-icon' onClick={handleClick}>
-              <i className={click ? 'fas fa-bars' : 'fas fa-bars' } />
+              <i className={click ? 'fas fa-times' : 'fas fa-bars' } />
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className="nav-item">
@@ -47,6 +60,11 @@ function Navbar() {
               <li className="nav-item">
                 <Link to="/Contact" className='nav-links' onClick={closeMobileMenu}>
                   Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link to='/Join Us' className='nav-links-mobile' onClick={closeMobileMenu}>
+                  Join Us
                 </Link>
               </li>
             </ul>
