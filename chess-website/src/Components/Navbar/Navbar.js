@@ -40,7 +40,7 @@ function Navbar() {
 
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
               <img src={Logo} alt="Logo" className="navbar-image"/>
-                <div className='navbar-title'>Vikings Chess</div>
+                <div className='navbar-title'>WCI Chess Club</div>
             </Link>
 
             <div className='menu-icon' onClick={handleClick}>
