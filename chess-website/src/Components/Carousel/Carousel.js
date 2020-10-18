@@ -6,6 +6,7 @@ import Carousel1 from '../../Images/carousel-one.png'
 // import Carousel2 from 
 
 const photos = [
+    // get image links to work. 
     {
         name: 'Photo 1',
         url: {Carousel1}

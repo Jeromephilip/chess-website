@@ -99,6 +99,7 @@
       left: 100%;
       opacity: 0.9;
       transition: all 0.5s ease;
+      
     }
   
     .nav-menu.active {
