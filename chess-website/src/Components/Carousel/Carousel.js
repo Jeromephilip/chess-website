@@ -3,17 +3,17 @@ import "/Users/jerom/OneDrive/Desktop/Programming/ChessWebsite/chess-website/nod
 import "/Users/jerom/OneDrive/Desktop/Programming/ChessWebsite/chess-website/node_modules/slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 import Carousel1 from '../../Images/carousel-one.png'
-// import Carousel2 from 
+import Carousel2 from '../../Images/carousel-two.jpeg'
 
 const photos = [
     // get image links to work. 
     {
         name: 'Photo 1',
-        url: {Carousel1}
+        url: Carousel1
     },
     {
         name: 'Photo 2',
-        url: '../../Images/carousel-one.png'
+        url: Carousel2
     }
 ]
 
