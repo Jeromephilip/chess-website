@@ -4,6 +4,7 @@ import "/Users/jerom/OneDrive/Desktop/Programming/ChessWebsite/chess-website/nod
 import Slider from 'react-slick';
 import Carousel1 from '../../Images/carousel-one.png'
 import Carousel2 from '../../Images/carousel-two.jpeg'
+import './Carousel.css'
 
 const photos = [
     // get image links to work. 
@@ -19,29 +20,37 @@ const photos = [
 
 
 class Carousel extends Component {
+
     render() {
         const settings = {
-            dots: true,
+            dots: false,
             infinite: true,
             fade: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
             speed: 500,
-            slidesToShow: 1,
             arrows: true,
-            slidesToScroll: 1,
-            className: "slides"
+            slidesToShow: 1,
+            slidestoScroll: 1,
+            className: "slides",
+            cssEase: "linear",
+            centerMode: true
+            
         }
     return (
-        <div className="Carousel">
-            <Slider {...settings}>
-              {photos.map((photo) => {
-                  return(
-                      <div>
-                          <img alt="images" width="100%" src={photo.url}/>
-                      </div>
-                  )
-              })}  
-            </Slider>
-        </div>
+            <div className="container">
+                <div className="slider-wrapper">
+                    <Slider {...settings}>
+                    {photos.map((photo) => {
+                        return(
+                            <div className="slick-slide">
+                                <img className = "slick-slide-image" width="100%" src={photo.url}/>
+                            </div>
+                        )
+                    })}  
+                    </Slider>
+                </div>
+            </div>
     )
     }
 }

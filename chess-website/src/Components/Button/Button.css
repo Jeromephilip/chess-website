@@ -1,10 +1,11 @@
 :root {
-    --primary: #242424;
+    --primary: #CFB257;
+
 }
 
 .btn {
     padding: 8px 20px;
-    border-radius: 2px;
+    border-radius: 15px;
     outline: none;
     border: none;
     cursor: pointer;
@@ -12,15 +13,15 @@
 
 .btn--primary {
     background-color: var(--primary);
-    color: #242424;
-    border: 1px solid var(--primary);
+    width: 150px;
+    height: 80px;
+    font-weight: 900;
 }
 
 .btn--outline {
     background-color: transparent;
     color: #43392A;
     padding: 8px 20px;
-    border: 1px solid var (--primary);
     transition: all 0.3s ease-out;
 }
 

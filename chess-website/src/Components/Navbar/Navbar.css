@@ -8,8 +8,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    border-bottom: 2px solid #242424;
-  }
+}
   
   .navbar-container {
     display: flex;
@@ -17,11 +16,13 @@
     align-items: center;
     height: 80px;
     max-width: 1500px;
+    border-color: red;
   }
   
   .navbar-logo {
     color: #43392A;
     justify-self: start;
+    margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
     font-size: 1.3rem;
@@ -48,7 +49,7 @@
     grid-gap: 10px;
     list-style: none;
     text-align: center;
-    width: 50vw;
+    width: 60vw;
     justify-content: end;
     margin-right: 2rem;
   }
@@ -83,7 +84,7 @@
     display: none;
   }
   
-  @media screen and (max-width: 1006px) {
+  @media screen and (max-width: 960px) {
     .NavbarItems {
       position: relative;
     }
@@ -92,12 +93,12 @@
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      width: 33%;
+      width: 100%;
       height: 90vh;
       position: absolute;
-      top: 78px;
-      left: 100%;
-      opacity: 0.9;
+      top: 80px;
+      left: -100%;
+      opacity: 1%;
       transition: all 0.5s ease;
       
     }
@@ -105,7 +106,7 @@
     .nav-menu.active {
       display: flex;
       background: #CFB257;
-      left: 67%;
+      left: 0;
       opacity: 0.9;
       transition: all 0.5s ease;
       z-index: 1;
