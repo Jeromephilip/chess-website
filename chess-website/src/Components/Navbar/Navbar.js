@@ -31,8 +31,8 @@ function Navbar() {
 
     return (
     <>
-      <nav className="navbar">
-          <div className="navbar-container">
+      <nav className="navbarr">
+          <div className="navbar-container-div">
             {/* <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img src={Logo} alt="Logo" className="navbar-image"></img>
                 <div className="navbar-title">Waterloo C.I Chess Club</div>
@@ -47,18 +47,18 @@ function Navbar() {
               <i className={click ? 'fas fa-times' : 'fas fa-bars' } />
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-              <li className="nav-item">
-                <Link to="/About" className='nav-links' onClick={closeMobileMenu}>
+              <li className="nav-item-ul">
+                <Link to="/About" className='nav-links-li' onClick={closeMobileMenu}>
                   About Us
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link to="/Events" className='nav-links' onClick={closeMobileMenu}>
+              <li className="nav-item-ul">
+                <Link to="/Events" className='nav-links-li' onClick={closeMobileMenu}>
                   Events
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link to="/Contact" className='nav-links' onClick={closeMobileMenu}>
+              <li className="nav-item-ul">
+                <Link to="/Contact" className='nav-links-li' onClick={closeMobileMenu}>
                   Contact Us
                 </Link>
               </li>

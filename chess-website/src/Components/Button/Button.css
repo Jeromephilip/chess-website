@@ -12,7 +12,7 @@
 }
 
 .btn--primary {
-    background-color: var(--primary);
+    background-color: #CFB257!important;
     width: 150px;
     height: 80px;
     font-weight: 900;
@@ -27,7 +27,7 @@
 
 .btn--medium {
     padding: 8px 20px;
-    font-size: 20px;
+    font-size: 20px!important;
 }
 
 btn--large {
@@ -36,7 +36,8 @@ btn--large {
 }
 
 .btn--medium:hover, .btn--large:hover {
-    background: #43392A;
-    color: #CFB257;
+    background: #43392A!important;
+    color: #CFB257!important;
     transition: all 0.3s ease-out;
 }
+

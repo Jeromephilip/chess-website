@@ -7,7 +7,7 @@
 
 /* container for image and divs*/
 .App {
-  height: 90vh;
+  height: 95vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -74,7 +74,7 @@
   float: right;
   display: inline;
   width: 50%;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .About-us-text {
@@ -108,7 +108,7 @@
   }
 
   .About-us-content-div {
-    font-size: 25px;
+    font-size: 20px;
     padding-top: 5%;
     padding-left: 9%;
     width: 100%;

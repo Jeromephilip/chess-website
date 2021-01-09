@@ -7,7 +7,6 @@ import Carousel2 from '../../Images/carousel-two.jpeg'
 import './Carousel.css'
 
 const photos = [
-    // get image links to work. 
     {
         name: 'Photo 1',
         url: Carousel1
@@ -34,8 +33,8 @@ class Carousel extends Component {
             slidestoScroll: 1,
             className: "slides",
             cssEase: "linear",
-            centerMode: true
-            
+            centerMode: true,
+            swipeToSlide: true,
         }
     return (
             <div className="container-carousel">
