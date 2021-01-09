@@ -38,13 +38,13 @@ class Carousel extends Component {
             
         }
     return (
-            <div className="container">
+            <div className="container-carousel">
                 <div className="slider-wrapper">
                     <Slider {...settings}>
                     {photos.map((photo) => {
                         return(
                             <div className="slick-slide">
-                                <img className = "slick-slide-image" width="100%" src={photo.url}/>
+                                <img className = "slick-slide-image" width= "100%" src={photo.url}/>
                             </div>
                         )
                     })}  
