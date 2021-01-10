@@ -46,6 +46,9 @@ function Navbar() {
                 <img src={Logo} alt="Logo" className="navbar-image"/>
                 <div className='navbar-title'>WCI Chess Club</div>
                 </Link>
+            <div className='menu-icon' onClick={handleClick}>
+              <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+            </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className="nav-item-ul">
                 <Link 

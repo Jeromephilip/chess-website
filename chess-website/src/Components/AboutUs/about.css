@@ -1,8 +1,12 @@
+
+.about-us-contain {
+  width: 95%;
+  margin: auto;
+}
+
 .About-us-container {
-    margin: auto;
-    width: 85%;
+    
     overflow: hidden;
-    padding-bottom: 200px;
   }
   
   
@@ -49,3 +53,30 @@
       padding-left: 9%;
       width: 100%;
     }
+
+.About-us-cards-container {
+}
+
+.About-us-heading-cards {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.headline-cards {
+  line-height: 1.5em;
+  color: #43392A;
+  font-size: 2em;
+  position: relative;
+}
+
+.headline-cards:after {
+  content:' ';
+  position: absolute;
+  top:100%;
+  left:50%;
+  width:50vh;
+  border:4px solid #CFB257;
+  border-radius:4px;
+  box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+  transform:translateX(-50%);
+}

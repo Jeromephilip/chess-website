@@ -17,16 +17,18 @@
   
     /* Welcome message div */
     .App-content {
-      animation: 2s ease-out 0s 1 slideInFromLeft;
+      animation: 2s ease-out 0s 1 fadeIn;
       color: white;
       height: 100%;
-      padding-top: 15%;
-      padding-left: 13%;
+      margin: auto;
+      width: 50%;
+      text-align: center;
+      padding-top: 10%;
     }
   
   /* WCI CHESS*/
     .Wci-chess {
-      animation: 3s ease-out 0s 1 slideInFromLeft;
+      animation: 2s ease-out 0s 1 fadeIn;
       font-size: 5em;
       color: #CFB257;
     }
@@ -48,7 +50,28 @@
   /* button - join now */
     .button-join{
       animation: 6s ease-out 0s 1 fadeIn;
-      float: right;
-      padding: 16%;
     }
   
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  left: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.circle li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 70%;
+}
+
+circle li.blue {
+  background: rgba(255, 255, 255, 0);
+}
