@@ -7,7 +7,7 @@ class Cards extends Component {
         return (
             <div className="container-fluid d-flex justify-content-center">
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-sm-12 col-md-4 p-3">
                         <Card imageSource={ImageOne} title="One" 
                         paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -16,7 +16,7 @@ class Cards extends Component {
                         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
                         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-sm-12 col-md-4 p-3">
                     <Card imageSource={ImageOne} title="One" 
                         paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -25,7 +25,7 @@ class Cards extends Component {
                         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
                         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-sm-12 col-md-4 p-3">
                     <Card imageSource={ImageOne} title="One" 
                         paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

@@ -5,6 +5,9 @@
   font-family: 'Slabo 13px', serif;
 }
 
+.body {
+  overflow-x:hidden;
+}
 
 .home,
 .services,
